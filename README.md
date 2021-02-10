@@ -7,7 +7,8 @@
 
 2、必要プラグインのインストールをお願いします 
 
-・検索画面から 
+<br>
+
 Advanced Custom Fields <br>
 Advanced Custom Fields pro <br>
 All-in-One WP Migration （大きい容量を引っ越しできるタイプの方）<br>
