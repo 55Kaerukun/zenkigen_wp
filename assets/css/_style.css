@@ -1,0 +1,4901 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/wvp0njz.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Import fonts
+ */
+@font-face {
+  font-family: "Akkurat-Bold";
+  src: url("../font/AkkuratPro-Bold.woff2") format("woff2"), url("../font/AkkuratPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Akkurat-Regular";
+  src: url("../font/AkkuratPro-Regular.woff2") format("woff2"), url("../font/AkkuratPro-Regular.woff") format("woff");
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Global Variables
+ */
+/* background color */
+/* type color */
+/* SNS */
+/* Type Family */
+/* Margin */
+/* Grid */
+/* Animaition */
+/* --------------------------- */
+/*
+ * Import Fonts
+ */
+/* --------------------------- */
+/*
+ * Common Style
+ */
+html {
+  font-size: 62.5%;
+}
+
+/* 10px */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.8;
+  color: black;
+  background-color: #fcffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  color: inherit;
+  letter-spacing: 0.05rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  color: #39a8d8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #39a8d8;
+}
+
+a:hover {
+  color: #39a8d8;
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/*
+ * Common Style
+ */
+div,
+header,
+footer,
+nav,
+main,
+section,
+ul,
+dl,
+p {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+dd,
+dl,
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td,
+th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+section {
+  position: relative;
+}
+
+.content-container {
+  width: 1024px;
+  margin: 80px auto;
+  padding: 0;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .content-container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 64px 0;
+  }
+}
+
+.txc {
+  text-align: center;
+}
+
+.display-none {
+  display: none;
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Compornent
+ */
+/* loader -------------------- */
+/* BR -------------------- */
+@media (min-width: 1030px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+  .hidden-md-down {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .hidden-md-up {
+    display: block !important;
+  }
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+.sc-f {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transform: translate3d(0px, 60px, 0px);
+          transform: translate3d(0px, 60px, 0px);
+  -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.5s cubic-bezier(0.2, 1, 0.2, 1) 0.1s;
+  transition: opacity 0.8s linear 0.2s, -webkit-transform 0.5s cubic-bezier(0.2, 1, 0.2, 1) 0.1s;
+  transition: opacity 0.8s linear 0.2s, transform 0.5s cubic-bezier(0.2, 1, 0.2, 1) 0.1s;
+  transition: opacity 0.8s linear 0.2s, transform 0.5s cubic-bezier(0.2, 1, 0.2, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.2, 1, 0.2, 1) 0.1s;
+}
+
+.sc-f.show {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+}
+
+.sc-f-on {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/* Button -------------------- */
+.wrap-btn {
+  margin: 32px 0;
+  height: auto;
+  position: relative;
+}
+
+.wrap-btn a {
+  text-decoration: none;
+  color: black;
+  border: 1px black solid;
+  opacity: 1;
+  display: inline-block;
+  padding: 12px 40px 12px 24px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.wrap-btn a .btn-s .btn-txt {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.wrap-btn a .btn-s .btn-ar {
+  height: 17px;
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+}
+
+.wrap-btn a:hover {
+  text-decoration: none;
+}
+
+.wrap-btn a:hover .btn-s {
+  opacity: 0.5;
+}
+
+.wrap-btn a:hover .btn-s .btn-ar {
+  -webkit-transform: translate(12px, -1px);
+          transform: translate(12px, -1px);
+}
+
+/* loader -------------------- */
+#wrap-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10002;
+  -webkit-transition: opacity 0.5s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 1;
+}
+
+#wrap-loader.hide {
+  opacity: 0;
+}
+
+#wrap-loader.remove {
+  display: none;
+}
+
+@-webkit-keyframes loader-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes loader-out {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.loader {
+  background: rgba(0, 0, 0, 0.8);
+  width: 16em;
+  height: 1px;
+  position: fixed;
+  left: 0;
+  top: 55%;
+  text-indent: -9999em;
+  margin: 0 auto;
+  position: relative;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+.loader:before {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load1 1s infinite ease-in-out normal forwards;
+          animation: load1 1s infinite ease-in-out normal forwards;
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 4em;
+  height: 1px;
+  left: 0;
+  -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+}
+
+@-webkit-keyframes load1 {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(400%);
+            transform: translateX(400%);
+  }
+}
+
+@keyframes load1 {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(400%);
+            transform: translateX(400%);
+  }
+}
+
+@media (max-width: 768px) {
+  .loader {
+    top: 45%;
+  }
+}
+
+/* 4 Animation --------------------*/
+.fade-in {
+  -webkit-animation: fade-in 0.8s ease 0s 1 forwards normal;
+          animation: fade-in 0.8s ease 0s 1 forwards normal;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.8s ease 0s 1 forwards normal;
+          animation: fade-out 0.8s ease 0s 1 forwards normal;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes backtop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes backtop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes scroll-down {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  10% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  30% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  40% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  10% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  30% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  40% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.td1 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.td2 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.td3 {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.td4 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.td5 {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.td6 {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.td7 {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.td8 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.ad1 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.ad2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.ad3 {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.ad4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.ad5 {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+.ad6 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.ad7 {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.ad8 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+/* ------------------------------------------------------ */
+/*
+ * header
+ */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 1002;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: white;
+  color: black;
+  opacity: 0;
+}
+
+header .header-container {
+  width: 100%;
+  height: 64px;
+  position: relative;
+}
+
+header .header-container .site-id {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  width: 240px;
+  height: 36px;
+}
+
+header .header-container .site-id a {
+  font-family: "Akkurat-Bold", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+}
+
+header .header-container .site-id a span.site-id-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header .header-container .site-id a span.site-id-img img {
+  width: 150px;
+}
+
+header .header-container .site-id a span.site-id-title {
+  position: absolute;
+  left: 160px;
+  top: 1px;
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0rem;
+  font-style: normal;
+}
+
+header .header-container .site-id a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+header .header-container .back-top {
+  position: absolute;
+  left: 24px;
+  top: 80px;
+  opacity: 0;
+  -webkit-animation: backtop 0.5s ease 2.6s 1 forwards normal;
+          animation: backtop 0.5s ease 2.6s 1 forwards normal;
+}
+
+header .header-container .back-top a {
+  color: black;
+  background: url(../img/ar_back_black_s.svg) 8px center no-repeat;
+  padding-left: 28px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+}
+
+header .header-container .back-top a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  background-position: 0px center;
+}
+
+header .header-container .wrap-nav {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 58px;
+  height: 64px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-container .wrap-nav .header-nav {
+  width: 58px;
+  height: 58px;
+  padding: 18px 12px 0;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav {
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav span {
+  position: absolute;
+  text-indent: -9999em;
+  font-size: 11px;
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav.active {
+  border-top: 1px solid rgba(215, 254, 6, 0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav.active:before {
+  -webkit-transform: translateX(0) translateY(0px) rotate(-34deg);
+          transform: translateX(0) translateY(0px) rotate(-34deg);
+}
+
+header .header-container .wrap-nav .header-nav .mobile-nav.active:after {
+  -webkit-transform: translateX(0) translateY(-10px) rotate(34deg);
+          transform: translateX(0) translateY(-10px) rotate(34deg);
+}
+
+header .header-container .wrap-nav .header-nav:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+header .header-container .wrap-nav .corporate-link {
+  width: 150px;
+  text-align: right;
+}
+
+header .header-container .wrap-nav .corporate-link a {
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.3rem;
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: 400;
+}
+
+header .header-container .wrap-nav .corporate-link a .corp-name {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-weight: 700;
+}
+
+header .header-container .wrap-nav .corporate-link a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  background-position: 0px center;
+}
+
+.home header {
+  -webkit-transform: translateY(-64px);
+          transform: translateY(-64px);
+}
+
+.home header.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+header {
+  -webkit-transform: translateY(-64px);
+          transform: translateY(-64px);
+  opacity: 0;
+}
+
+header.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+header.scroll {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.home header .back-top {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  header {
+    top: 0;
+    height: 64px;
+  }
+  header .site-id {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  header .site-id a span.site-id-img {
+    left: 0;
+    top: 0;
+  }
+  header .site-id a span.site-id-img img {
+    width: 150px;
+    height: auto;
+  }
+  header .site-id a span.site-id-title {
+    left: 160px;
+    top: 1px;
+    font-size: 2rem;
+  }
+  header .back-top {
+    left: 24px;
+    top: 80px;
+  }
+  header .back-top a {
+    padding-left: 28px;
+    font-size: 1.4rem;
+  }
+  header .wrap-nav {
+    top: 0;
+    right: 12px;
+    width: 58px;
+    height: 64px;
+  }
+  header .wrap-nav .header-nav {
+    width: 58px;
+    height: 58px;
+    padding: 18px 12px 0;
+  }
+  header .wrap-nav .header-nav .mobile-nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    top: 0;
+    height: 64px;
+  }
+  header .site-id {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  header .site-id a span.site-id-img {
+    left: 0;
+    top: 0;
+  }
+  header .site-id a span.site-id-img img {
+    width: 150px;
+    height: auto;
+  }
+  header .site-id a span.site-id-title {
+    left: 160px;
+    top: 1px;
+    font-size: 2rem;
+  }
+  header .back-top {
+    display: none;
+  }
+  header .back-top a {
+    padding-left: 28px;
+    font-size: 1.4rem;
+  }
+  header .wrap-nav {
+    top: 0;
+    right: 12px;
+    width: 58px;
+    height: 64px;
+  }
+  header .wrap-nav .header-nav {
+    width: 58px;
+    height: 58px;
+    padding: 18px 12px 0;
+  }
+  header .wrap-nav .header-nav .mobile-nav {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Drawer
+ */
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.96);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  -webkit-transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+}
+
+.drawer .drawer-wrapper {
+  width: 640px;
+  margin: 160px auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.drawer .drawer-wrapper .drawer-container {
+  width: 240px;
+  padding-left: 40px;
+}
+
+.drawer .drawer-wrapper .drawer-container p.drawer-title {
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  color: #aaa;
+  margin-bottom: 32px;
+  opacity: 0;
+  -webkit-transition: all 0.8s 0.1s cubic-bezier(0.67, 0.16, 0.36, 1);
+  transition: all 0.8s 0.1s cubic-bezier(0.67, 0.16, 0.36, 1);
+}
+
+.drawer .drawer-wrapper .drawer-container p.drawer-corp-title {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li {
+  text-align: left;
+  margin-bottom: 32px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:before {
+  content: "";
+  width: 24px;
+  position: absolute;
+  top: 13px;
+  left: -40px;
+  border-top: 1px solid #aaa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li a {
+  color: black;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li a:hover {
+  opacity: 0.5;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(1) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(2) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(3) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(5) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul li:nth-child(6) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(1) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(2) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(3) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(4) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(5) {
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.drawer .drawer-wrapper .drawer-container ul.drawer-corp-list li:nth-child(6) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.drawer.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.drawer.show p.drawer-title.show {
+  opacity: 1;
+}
+
+.drawer.show ul li.show {
+  opacity: 1;
+}
+
+@media (max-width: 1023px) {
+  .drawer {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    -webkit-transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+    transition: all 0.4s cubic-bezier(0.67, 0.16, 0.36, 1);
+  }
+  .drawer .drawer-wrapper {
+    width: 480px;
+    margin: 120px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .drawer .drawer-wrapper .drawer-container {
+    width: 220px;
+    padding-left: 40px;
+  }
+  .drawer .drawer-wrapper .drawer-container p.drawer-title {
+    opacity: 0;
+    -webkit-transition: all 0.8s 0.1s cubic-bezier(0.67, 0.16, 0.36, 1);
+    transition: all 0.8s 0.1s cubic-bezier(0.67, 0.16, 0.36, 1);
+  }
+  .drawer .drawer-wrapper .drawer-container ul li {
+    margin-bottom: 24px;
+    opacity: 0;
+  }
+  .drawer .drawer-wrapper .drawer-container ul li:before {
+    content: "";
+    width: 20px;
+    top: 13px;
+    left: -32px;
+  }
+  .drawer .drawer-wrapper .drawer-container ul li a {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .drawer.show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .drawer.show p.drawer-title.show {
+    opacity: 1;
+  }
+  .drawer.show ul li.show {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .drawer {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  .drawer .drawer-wrapper {
+    width: 100%;
+    margin: 80px 0 0;
+    display: block;
+  }
+  .drawer .drawer-wrapper .drawer-container {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+    padding: 0 16px 0;
+  }
+  .drawer .drawer-wrapper .drawer-container p.drawer-title {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    opacity: 0;
+    text-align: center;
+  }
+  .drawer .drawer-wrapper .drawer-container ul {
+    width: 220px;
+    margin: 0 auto;
+  }
+  .drawer .drawer-wrapper .drawer-container ul li {
+    margin-bottom: 8px;
+    opacity: 0;
+  }
+  .drawer .drawer-wrapper .drawer-container ul li:before {
+    width: 20px;
+    top: 13px;
+    left: -32px;
+  }
+  .drawer .drawer-wrapper .drawer-container ul li a {
+    font-size: 1.4rem;
+  }
+  .drawer.show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .drawer.show p.drawer-title.show {
+    opacity: 1;
+  }
+  .drawer.show ul li.show {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Section
+ */
+.sec {
+  padding: 96px 0;
+  background-color: #fff;
+}
+
+.sec .section-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sec .section-title h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+  margin-right: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.sec .section-title p {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 1023px) {
+  .sec {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec {
+    padding: 64px 0;
+  }
+  .sec .section-title {
+    padding: 0 16px;
+  }
+  .sec .section-title h2 {
+    font-size: 2.8rem;
+  }
+  .sec .section-title p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area
+ */
+.area {
+  width: 100%;
+  height: 480px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  /* IE対策に追加 */
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.area a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 480px;
+  color: #fcffff;
+}
+
+.area a .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.area a .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 0.2;
+  -webkit-transition: all 1.2s 0.2s ease-out;
+  transition: all 1.2s 0.2s ease-out;
+}
+
+.area a .area-container {
+  position: relative;
+  z-index: 5;
+}
+
+.area a .area-container .wrap-btn {
+  margin-top: 32px;
+}
+
+.area a .area-container .wrap-btn .btn-s {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fcffff;
+  border: 1px #fcffff solid;
+  display: inline;
+  padding: 12px 40px 12px 24px;
+  border-radius: 4px;
+  position: relative;
+  display: inline;
+}
+
+.area a .area-container .wrap-btn .btn-s .btn-txt {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.area a .area-container .wrap-btn .btn-s .btn-ar {
+  height: 17px;
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+}
+
+.area a:hover {
+  text-decoration: none;
+  background-size: cover;
+}
+
+.area a:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.area a:hover .area-img {
+  opacity: 0;
+}
+
+.area a:hover .area-container .wrap-btn .btn-s {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px #fcffff solid;
+}
+
+.area a:hover .area-container .wrap-btn .btn-s .btn-ar {
+  -webkit-transform: translate(12px, -1px);
+          transform: translate(12px, -1px);
+}
+
+@media (max-width: 1024px) {
+  .area {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .area a .area-container {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 767px) {
+  .area {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .area a .area-container {
+    position: relative;
+    z-index: 5;
+  }
+  .area a .area-container .wrap-btn {
+    margin-top: 32px;
+  }
+  .area a .area-container .wrap-btn .btn-s {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fcffff;
+    border: 1px #fcffff solid;
+    display: inline;
+    padding: 12px 40px 12px 24px;
+    border-radius: 4px;
+    position: relative;
+    display: inline;
+  }
+  .area a .area-container .wrap-btn .btn-s .btn-txt {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  .area a .area-container .wrap-btn .btn-s .btn-ar {
+    height: 17px;
+    -webkit-transform: translate(0, -1px);
+            transform: translate(0, -1px);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    position: absolute;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ *  Footer
+ */
+footer {
+  overflow: hidden;
+  padding: 80px 0 32px;
+  background-color: black;
+}
+
+footer .footer-container {
+  position: relative;
+  color: #fcffff;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+footer .footer-container a {
+  color: #fcffff;
+}
+
+footer .footer-container a:hover {
+  color: #fcffff;
+  text-decoration: none;
+}
+
+footer .footer-container .logo a {
+  font-family: "Akkurat-Bold", sans-serif;
+  color: #fcffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-container .logo a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+footer .footer-container .footer-column-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 64px 0;
+}
+
+footer .footer-container .footer-column-top .footer-address {
+  width: 340px;
+}
+
+footer .footer-container .footer-column-top .footer-address h4 {
+  font-family: "Akkurat-Bold", sans-serif;
+  color: #fcffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+footer .footer-container .footer-column-top .footer-address .address-text {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 64px;
+}
+
+footer .footer-container .footer-column-top .footer-nav {
+  width: 630px;
+}
+
+footer .footer-container .footer-column-top .footer-nav h4 {
+  font-family: "Akkurat-Bold", sans-serif;
+  color: #fcffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+footer .footer-container .footer-column-top .footer-nav ul li {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+footer .footer-container .footer-column-top .footer-nav .footer-nav-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+footer .footer-container .footer-column-top .footer-nav .footer-nav-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-container .footer-column-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-container .footer-column-bottom ul {
+  width: 960px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-container .footer-column-bottom ul li {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footer-container .footer-column-bottom .copyright {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+footer #page-top {
+  position: absolute;
+  z-index: 8;
+  bottom: 40px;
+  right: 32px;
+  width: 20px;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+footer #page-top a {
+  text-decoration: none;
+  height: 8rem;
+  width: 2rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  display: block;
+}
+
+footer #page-top a .txt {
+  color: #ffffff;
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+
+footer #page-top a .arw {
+  width: 1px;
+  height: 5.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: -6.5rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+footer #page-top a .arw:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #ffffff;
+  -webkit-animation: scroll-down 2.4s 1.4s ease-in-out infinite normal;
+          animation: scroll-down 2.4s 1.4s ease-in-out infinite normal;
+}
+
+footer #page-top.show a {
+  bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    overflow: hidden;
+    padding: 32px 0 32px;
+    background-color: black;
+  }
+  footer .footer-container {
+    position: relative;
+    color: #fcffff;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 16px;
+  }
+  footer .footer-container a {
+    color: #fcffff;
+  }
+  footer .footer-container a:hover {
+    color: #fcffff;
+    text-decoration: none;
+  }
+  footer .footer-container .logo a {
+    font-size: 1.6rem;
+  }
+  footer .footer-container .footer-column-top {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 32px 0;
+  }
+  footer .footer-container .footer-column-top .footer-address {
+    width: 210px;
+  }
+  footer .footer-container .footer-column-top .footer-address h4 {
+    margin-bottom: 8px;
+  }
+  footer .footer-container .footer-column-top .footer-address .address-text {
+    margin-bottom: 32px;
+  }
+  footer .footer-container .footer-column-top .footer-nav {
+    width: 480px;
+  }
+  footer .footer-container .footer-column-top .footer-nav h4 {
+    margin-bottom: 16px;
+  }
+  footer .footer-container .footer-column-top .footer-nav ul li {
+    margin-bottom: 16px;
+  }
+  footer .footer-container .footer-column-top .footer-nav .footer-nav-top {
+    margin-bottom: 32px;
+  }
+  footer .footer-container .footer-column-bottom {
+    width: 100%;
+    display: block;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-container .footer-column-bottom ul {
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  footer .footer-container .footer-column-bottom .copyright {
+    text-align: left;
+  }
+  footer #page-top {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    overflow: hidden;
+    padding: 64px 16px 32px;
+  }
+  footer .footer-container {
+    position: relative;
+    color: #fcffff;
+    width: 100%;
+    margin: 0;
+  }
+  footer .footer-container .logo a {
+    font-size: 1.6rem;
+  }
+  footer .footer-container .footer-column-top {
+    width: 100%;
+    display: block;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 32px 0;
+  }
+  footer .footer-container .footer-column-top .footer-address {
+    width: 100%;
+  }
+  footer .footer-container .footer-column-top .footer-address h4 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  footer .footer-container .footer-column-top .footer-address .address-text {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+  footer .footer-container .footer-column-top .footer-nav {
+    width: 100%;
+  }
+  footer .footer-container .footer-column-top .footer-nav h4 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  footer .footer-container .footer-column-top .footer-nav ul {
+    margin-bottom: 64px;
+  }
+  footer .footer-container .footer-column-top .footer-nav ul li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  footer .footer-container .footer-column-top .footer-nav .footer-nav-top {
+    width: 100%;
+    display: block;
+    margin-bottom: 64px;
+  }
+  footer .footer-container .footer-column-top .footer-nav .footer-nav-bottom {
+    width: 100%;
+    display: block;
+  }
+  footer .footer-container .footer-column-bottom {
+    width: 100%;
+    display: block;
+  }
+  footer .footer-container .footer-column-bottom ul {
+    width: 100%;
+    display: block;
+  }
+  footer .footer-container .footer-column-bottom ul li {
+    margin-bottom: 8px;
+  }
+  footer .footer-container .footer-column-bottom .copyright {
+    margin-top: 32px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  footer #page-top {
+    position: absolute;
+    bottom: 24px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Main
+ */
+.home main {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  /* IE対策に追加 */
+  background-color: #fcffff;
+  opacity: 0;
+  -webkit-transition: all 1s 1s ease;
+  transition: all 1s 1s ease;
+}
+
+.home main .slide-show {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home main .slide-show li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 1.6s ease;
+  transition: all 1.6s ease;
+}
+
+.home main .slide-show li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home main .slide-show li.show {
+  opacity: 1;
+}
+
+.home main .main-dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-transition: all 1.2s 1.2s ease-out;
+  transition: all 1.2s 1.2s ease-out;
+}
+
+.home main .main-dot-img.hide {
+  opacity: 0.2;
+}
+
+.home main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.35)), color-stop(65%, rgba(255, 255, 255, 0.425)), color-stop(75.5%, rgba(255, 255, 255, 0.4625)), color-stop(82.85%, rgba(255, 255, 255, 0.4815)), color-stop(88%, rgba(255, 255, 255, 0.4905)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.425) 65%, rgba(255, 255, 255, 0.4625) 75.5%, rgba(255, 255, 255, 0.4815) 82.85%, rgba(255, 255, 255, 0.4905) 88%, rgba(255, 255, 255, 0.5));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.425) 65%, rgba(255, 255, 255, 0.4625) 75.5%, rgba(255, 255, 255, 0.4815) 82.85%, rgba(255, 255, 255, 0.4905) 88%, rgba(255, 255, 255, 0.5));
+  z-index: 0;
+}
+
+.home main .main-title {
+  width: 100%;
+  height: 120px;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  text-align: center;
+  color: black;
+}
+
+.home main .main-title h1 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1;
+  letter-spacing: 0rem;
+  opacity: 0;
+  -webkit-transition: all 0.7s 1.5s ease;
+  transition: all 0.7s 1.5s ease;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.home main .main-title p {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  opacity: 0;
+  -webkit-transition: all 0.7s 1.7s ease;
+  transition: all 0.7s 1.7s ease;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.home main .main-title h1.show,
+.home main .main-title p.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.home main.show {
+  opacity: 1;
+}
+
+.home .main-scroll {
+  width: 120px;
+  height: 64px;
+  position: fixed;
+  left: 50%;
+  margin-left: -60px;
+  bottom: 8px;
+  color: black;
+  opacity: 0;
+  -webkit-transition: all 0.7s 2s ease;
+  transition: all 0.7s 2s ease;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.home .main-scroll .main-scroll-container {
+  position: relative;
+  width: 120px;
+  height: 64px;
+  text-align: center;
+}
+
+.home .main-scroll .main-scroll-container .scroll-t {
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.home .main-scroll .main-scroll-container .scroll-arw {
+  display: block;
+  width: 1px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  bottom: 16px;
+  overflow: hidden;
+}
+
+.home .main-scroll .main-scroll-container .scroll-arw:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #000;
+  -webkit-animation: scroll-down 2.4s 1.4s ease-in-out infinite normal;
+          animation: scroll-down 2.4s 1.4s ease-in-out infinite normal;
+}
+
+.home .main-scroll.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+/* fade-out-animation ---------------- */
+@media (max-width: 767px) {
+  .home main {
+    margin: 0;
+    opacity: 0;
+  }
+  .home main .main-title {
+    width: 100%;
+    bottom: 160px;
+    height: 80px;
+  }
+  .home main .main-title h1 {
+    font-size: 2.6rem;
+  }
+  .home main .main-title p {
+    font-size: 2rem;
+  }
+  .home main.show {
+    opacity: 1;
+  }
+  .home .main-scroll {
+    bottom: 2px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Mission Value
+ */
+.mission-value {
+  width: 100%;
+  height: 640px;
+  margin: 160px 0 80px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 5;
+  /* IE対策に追加 */
+}
+
+.mission-value .content-container {
+  width: 680px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+.mission-value .content-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.mission-value .content-container .sub-title {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 52px;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.mission-value .content-container h3 {
+  position: relative;
+  margin: 0px auto 40px;
+  text-align: center;
+  line-height: 3;
+  width: 380px;
+  height: 90px;
+}
+
+.mission-value .content-container h3 .mv-top-line {
+  opacity: 0;
+  -webkit-transition: all 0.8s 1s ease-out;
+  transition: all 0.8s 1s ease-out;
+}
+
+.mission-value .content-container h3 .mv-top-line:before {
+  content: "";
+  width: 70px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mission-value .content-container h3 .mv-top-line:after {
+  content: "";
+  width: 68px;
+  position: absolute;
+  top: 18px;
+  left: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mission-value .content-container h3 .mv-title {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  opacity: 0;
+  -webkit-transition: all 0.8s 1.5s ease-out;
+  transition: all 0.8s 1.5s ease-out;
+}
+
+.mission-value .content-container h3 .mv-bottom-line {
+  opacity: 0;
+  -webkit-transition: all 0.8s 1s ease-out;
+  transition: all 0.8s 1s ease-out;
+}
+
+.mission-value .content-container h3 .mv-bottom-line:before {
+  content: "";
+  width: 70px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mission-value .content-container h3 .mv-bottom-line:after {
+  content: "";
+  width: 68px;
+  position: absolute;
+  bottom: 18px;
+  right: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-top: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mission-value .content-container h3 .mv-top-line.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.mission-value .content-container h3 .mv-title.show {
+  opacity: 1;
+}
+
+.mission-value .content-container h3 .mv-bottom-line.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.mission-value .content-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+#WebGL-output {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 1.2s 1s ease-out;
+  transition: all 1.2s 1s ease-out;
+  z-index: -2;
+}
+
+#WebGL-output.show {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .mission-value {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .mission-value .content-container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin: 120px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .mission-value {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .mission-value .content-container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+  }
+  .mission-value .content-container h2 {
+    font-size: 4rem;
+  }
+  .mission-value .content-container .sub-title {
+    font-size: 1.6rem;
+    margin-bottom: 52px;
+  }
+  .mission-value .content-container h3 {
+    margin: 0px 0 40px;
+    text-align: center;
+    line-height: 3;
+    width: 100%;
+    height: 90px;
+  }
+  .mission-value .content-container h3 .mv-title {
+    font-size: 2.8rem;
+  }
+  .mission-value .content-container .copy-jp {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area Newgraduate & Career
+ */
+.area-newgraduate {
+  background: #fcffff url(../img/area_newgraduate.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.area-newgraduate a {
+  width: 100%;
+}
+
+.area-newgraduate a .area-container {
+  width: 480px;
+  right: 64px;
+  top: 160px;
+  text-align: center;
+  position: absolute;
+}
+
+.area-newgraduate a .area-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-right: 1.8rem;
+}
+
+.area-newgraduate a .area-container .subtitle-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.area-newgraduate a .area-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.area-newgraduate a:hover .area-img {
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .area-newgraduate {
+    background: #fcffff url(../img/area_newgraduate.jpg) -270px center no-repeat;
+    background-size: auto 500px;
+  }
+  .area-newgraduate a {
+    width: 100%;
+  }
+  .area-newgraduate a .area-container {
+    width: 360px;
+    right: 50px;
+    top: 120px;
+    text-align: center;
+    position: absolute;
+  }
+}
+
+@media (max-width: 767px) {
+  .area-newgraduate {
+    background: #fcffff url(../img/area_newgraduate.jpg) -250px center no-repeat;
+    background-size: cover;
+  }
+  .area-newgraduate a {
+    width: 100%;
+  }
+  .area-newgraduate a .area-container {
+    width: 100%;
+    right: 50%;
+    top: 200px;
+    text-align: center;
+    margin-right: -50%;
+    position: absolute;
+  }
+}
+
+.area-carrer {
+  margin-bottom: 96px;
+}
+
+.area-carrer a {
+  width: 100%;
+  background: #fcffff url(../img/area_career.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.area-carrer a .area-container {
+  width: 480px;
+  right: 64px;
+  top: 160px;
+  text-align: center;
+  position: absolute;
+}
+
+.area-carrer a .area-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-right: 1.8rem;
+}
+
+.area-carrer a .area-container .subtitle-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.area-carrer a .area-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .area-carrer {
+    background: #fcffff url(../img/area_career.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .area-carrer a {
+    width: 100%;
+  }
+  .area-carrer a .area-container {
+    width: 360px;
+    right: 50px;
+    top: 120px;
+    text-align: center;
+    position: absolute;
+  }
+}
+
+@media (max-width: 767px) {
+  .area-carrer {
+    margin-bottom: 96px;
+  }
+  .area-carrer a {
+    width: 100%;
+    background: #fcffff url(../img/career_main.jpg) center -100px no-repeat;
+    background-size: 800px auto;
+  }
+  .area-carrer a .area-container {
+    width: 100%;
+    right: 50%;
+    top: 200px;
+    text-align: center;
+    margin-right: -50%;
+    position: absolute;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Interview
+ */
+.interview-container ul {
+  width: 100%;
+  height: 290px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.interview-container ul li {
+  height: 290px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.interview-container ul li a {
+  width: 100%;
+  height: 290px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.interview-container ul li a .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.interview-container ul li a .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 0.2;
+  -webkit-transition: all 1.2s 0.2s ease-out;
+  transition: all 1.2s 0.2s ease-out;
+}
+
+.interview-container ul li a .interview-meta {
+  color: #fcffff;
+  text-align: center;
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  padding: 32px 16px;
+  z-index: 5;
+}
+
+.interview-container ul li a .interview-meta .interview-title {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.interview-container ul li a .interview-meta .interview-name {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.interview-container ul li a .interview-meta .interview-job {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.interview-container ul li a:hover {
+  text-decoration: none;
+  background-size: cover;
+}
+
+.interview-container ul li a:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.interview-container ul li a:hover .dot-img {
+  opacity: 0;
+}
+
+.interview-container ul li.konita {
+  background: url(../img/home_interview_konita.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.interview-container ul li.sakamoto {
+  background: url(../img/home_interview_sakamoto.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.interview-container ul li.yanagihara {
+  background: url(../img/home_interview_yanagihara.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.interview-container ul li.seki {
+  background: url(../img/home_interview_seki.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.interview-container ul li.miyamura {
+  background: url(../img/home_interview_miyamura.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.interview-container ul li.togami {
+  background: url(../img/home_interview_togami.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+@media (max-width: 1023px) {
+  .interview-container ul li a .interview-meta {
+    height: 200px;
+  }
+  .interview-container ul li a .interview-meta .interview-title {
+    font-size: 1.4srem;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .interview-container {
+    height: auto;
+  }
+  .interview-container ul {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .interview-container ul li a .interview-meta {
+    height: 160px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area Message
+ */
+
+ /* ここは事前に */
+@media (max-width: 767px){
+  .area-message{
+    background-size:cover;
+    background-position: center center;
+  }
+}
+
+
+.area-message a {
+  width: 100%;
+  height: 480px;
+}
+
+.area-message a .area-container {
+  text-align: center;
+  position: absolute;
+}
+
+.area-message a .area-container h3.message-name {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+}
+
+.area-message a .area-container .message-name-en {
+  font-family: "Akkurat-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: 0.3rem;
+}
+
+.area-message a .area-container .message-job {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.area-message a .area-container .message-copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2;
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .area-message a .area-container {
+    width: 100%;
+    height: 240px;
+  }
+  .area-message a .area-container h3.message-name {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .area-message a .area-container .message-job {
+    font-size: 1.4rem;
+    margin-top: 4px;
+  }
+  .area-message a .area-container .message-copy-jp {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-top: 4px;
+  }
+}
+
+.message-nozawa {
+  width: 100%;
+  height: 480px;
+  background: #fcffff url(../img/area_message_nozawa.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.message-nozawa a .area-container {
+  width: 480px;
+  right: 200px;
+  top: 100px;
+}
+
+.message-mizuno {
+  width: 100%;
+  height: 480px;
+  background: #fcffff url(../img/area_message_mizuno.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.message-mizuno a .area-container {
+  width: 480px;
+  left: 160px;
+  top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .message-nozawa a .area-container {
+    width: 480px;
+    right: 50%;
+    margin-right: -320px;
+    top: 120px;
+  }
+  .message-mizuno a .area-container {
+    width: 480px;
+    left: 50%;
+    margin-left: -300px;
+    top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .message-nozawa {
+    width: 100%;
+    height: 480px;
+    background: #fcffff url(../img/area_message_nozawa.jpg) -240px center no-repeat;
+    background-size: cover;
+  }
+  .message-nozawa a .area-container {
+    width: 100%;
+    right: 50%;
+    margin-right: -50%;
+    top: 260px;
+  }
+}
+
+@media (max-width: 767px) {
+  .message-mizuno {
+    width: 100%;
+    height: 480px;
+    background: #fcffff url(../img/area_message_mizuno.jpg) -800px center no-repeat;
+    background-size: cover;
+  }
+  .message-mizuno a .area-container {
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    top: 260px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area WorkStyle
+ */
+.area-workstyle {
+  width: 100%;
+  height: 400px;
+  background: #fcffff url(../img/area_workstyle.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.area-workstyle a {
+  pointer-events: none;
+}
+
+.area-workstyle a .area-container {
+  width: 480px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  margin-left: -240px;
+}
+
+.area-workstyle a .area-container h3 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-right: 1.8rem;
+}
+
+.area-workstyle a .area-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.area-workstyle a .area-container .comingsoon {
+  margin-top: 32px;
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+}
+
+.area-workstyle a .area-container .wrap-btn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .area-workstyle {
+    width: 100%;
+    height: 480px;
+    background: #fcffff url(../img/area_workstyle.jpg) -760px bottom no-repeat;
+    background-size: cover;
+  }
+  .area-workstyle a {
+    pointer-events: none;
+  }
+  .area-workstyle a .area-container {
+    width: 100%;
+    left: 50%;
+    top: 100px;
+    margin-left: -50%;
+  }
+  .area-workstyle a .area-container h3 {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area Company
+ */
+.area-company {
+  width: 100%;
+  height: auto;
+}
+
+.area-company .area-container {
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.area-company .area-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .area-company {
+    width: 100%;
+    height: auto;
+  }
+  .area-company .area-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Area News
+ */
+.area-news {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.area-news .area-container {
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.area-news .area-container dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.area-news .area-container dl dt {
+  width: 170px;
+}
+
+.area-news .area-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .area-news {
+    width: 100%;
+  }
+  .area-news .area-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .area-news .area-container dl {
+    display: block;
+    text-align: left;
+  }
+  .area-news .area-container dl dt {
+    width: 100%;
+  }
+  .area-news .area-container dl dd {
+    width: 100%;
+  }
+  .area-news .area-container .copy-jp {
+    font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Career
+ */
+.career main#main {
+  width: 100%;
+  height: 640px;
+  margin-top: 64px;
+  padding: 480px 0 0;
+  position: relative;
+}
+
+.career main#main .area-img {
+  width: 100%;
+  height: 640px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.career main#main .main-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.21)), color-stop(65%, rgba(255, 255, 255, 0.255)), color-stop(75.5%, rgba(255, 255, 255, 0.2775)), color-stop(82.85%, rgba(255, 255, 255, 0.2889)), color-stop(88%, rgba(255, 255, 255, 0.2943)), to(rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.21) 50%, rgba(255, 255, 255, 0.255) 65%, rgba(255, 255, 255, 0.2775) 75.5%, rgba(255, 255, 255, 0.2889) 82.85%, rgba(255, 255, 255, 0.2943) 88%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.21) 50%, rgba(255, 255, 255, 0.255) 65%, rgba(255, 255, 255, 0.2775) 75.5%, rgba(255, 255, 255, 0.2889) 82.85%, rgba(255, 255, 255, 0.2943) 88%, rgba(255, 255, 255, 0.3));
+  z-index: 1;
+}
+
+.career main#main .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.career main#main .main-title-wrap {
+  width: 1024px;
+  margin: 0 auto 0;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.career main#main .main-title-wrap h1 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 3.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  opacity: 0;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.career main#main .main-title-wrap .subtitle-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.career main#main .main-title-wrap .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.career .sec.message {
+  color: black;
+  width: 640px;
+  margin: 0 auto 0;
+}
+
+.career .sec.message .sec-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.career .sec.message .sec-container .copy-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+}
+
+.career .sec.newgraduate-type {
+  color: black;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.career .sec.newgraduate-type .section-title h3 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container {
+  width: 100%;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 320px;
+  margin-bottom: 64px;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image {
+  width: calc(100% - 640px);
+  height: 320px;
+  margin: 0;
+  position: relative;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image .dot-img,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-transition: all 0.8s 1s ease;
+  transition: all 0.8s 1s ease;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image img,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 320px;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image.show .dot-img,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image.show .dot-img {
+  opacity: 0;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+  width: 640px;
+  padding: 24px 64px;
+  height: 320px;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta h4,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta h4 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta .subtitle-jp,
+.career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta .subtitle-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container h4 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link {
+  width: 240px;
+  margin: 32px auto 120px;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li:before {
+  content: "";
+  width: 24px;
+  position: absolute;
+  top: 12px;
+  left: -40px;
+  border-top: 1px solid #aaa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link.career-corp {
+  width: 160px;
+}
+
+.career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link.career-business {
+  width: 160px;
+}
+
+.career .interview-session-photo {
+  width: calc(calc(calc(100% - 1024px) / 2) + 1024px);
+  height: 480px;
+  margin: 0;
+}
+
+.career .interview-session-photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 480px;
+}
+
+.career.newgraduate main#main .area-img {
+  background: url(../img/newgraduate_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.career.career-ch main#main .area-img {
+  background: url(../img/career_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .career main#main {
+    width: 100%;
+    height: 640px;
+    margin-top: 0;
+    padding: 480px 0 0;
+    position: relative;
+  }
+  .career main#main .main-title-wrap {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .career main#main .main-title-wrap h1 {
+    font-size: 3.2rem;
+  }
+  .career main#main .main-title-wrap .subtitle-jp {
+    font-size: 2rem;
+  }
+  .career main#main .main-title-wrap .copy-jp {
+    font-size: 1.5rem;
+  }
+  .career .sec.message {
+    color: black;
+    width: 100%;
+    margin: 64px 0 0;
+    padding: 0 16px;
+  }
+  .career .sec.message .sec-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+  .career .sec.message .sec-container .copy-jp {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+  .career .sec.newgraduate-type {
+    width: 100%;
+    margin: 0 0;
+    padding-bottom: 0;
+  }
+  .career .sec.newgraduate-type .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container {
+    width: 100%;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 32px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image {
+    width: 100%;
+    height: 320px;
+    margin: 0;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image img,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 320px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta {
+    width: 100%;
+    padding: 24px 16px 16px;
+    height: auto;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta h4,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta h4 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta .subtitle-jp,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta .subtitle-jp {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta .wrap-btn,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta .wrap-btn {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 16px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link {
+    width: 240px;
+    margin: 32px auto 80px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li {
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li:before {
+    content: "";
+    width: 20px;
+    position: absolute;
+    top: 14px;
+    left: -32px;
+    border-top: 1px solid #aaa;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .career main#main {
+    width: 100%;
+    height: 640px;
+    margin-top: 0;
+    padding: 480px 0 0;
+    position: relative;
+  }
+  .career main#main .main-title-wrap {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .career main#main .main-title-wrap h1 {
+    font-size: 3.2rem;
+  }
+  .career main#main .main-title-wrap .subtitle-jp {
+    font-size: 2rem;
+  }
+  .career main#main .main-title-wrap .copy-jp {
+    font-size: 1.5rem;
+  }
+  .career .sec.message {
+    color: black;
+    width: 100%;
+    margin: 64px 0 0;
+    padding: 0 16px;
+  }
+  .career .sec.message .sec-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+  .career .sec.message .sec-container .copy-jp {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+  .career .sec.newgraduate-type {
+    width: 100%;
+    margin: 0 0;
+    padding-bottom: 0;
+  }
+  .career .sec.newgraduate-type .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container {
+    width: 100%;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 32px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-image img,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 180px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta {
+    width: 100%;
+    padding: 24px 16px 16px;
+    height: auto;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta h4,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta h4 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta .subtitle-jp,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta .subtitle-jp {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-business .newgraduate-meta .wrap-btn,
+  .career .sec.newgraduate-type .sec-newgraduate-type-container .newgraduate-engineer .newgraduate-meta .wrap-btn {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 16px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link {
+    width: 240px;
+    margin: 32px auto 80px;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li {
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li:before {
+    content: "";
+    width: 20px;
+    position: absolute;
+    top: 14px;
+    left: -32px;
+    border-top: 1px solid #aaa;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .career .sec.newgraduate-type .sec-carre-type-container ul.carrer-entry-link li a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Interview
+ */
+.interview main#main {
+  width: 100%;
+  height: 640px;
+  margin-top: 64px;
+  padding: 80px 0 0;
+  position: relative;
+}
+
+.interview main#main .area-img {
+  width: 100%;
+  height: 640px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.interview main#main .main-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.28)), color-stop(65%, rgba(255, 255, 255, 0.34)), color-stop(75.5%, rgba(255, 255, 255, 0.37)), color-stop(82.85%, rgba(255, 255, 255, 0.3852)), color-stop(88%, rgba(255, 255, 255, 0.3924)), to(rgba(255, 255, 255, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.28) 50%, rgba(255, 255, 255, 0.34) 65%, rgba(255, 255, 255, 0.37) 75.5%, rgba(255, 255, 255, 0.3852) 82.85%, rgba(255, 255, 255, 0.3924) 88%, rgba(255, 255, 255, 0.4));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.28) 50%, rgba(255, 255, 255, 0.34) 65%, rgba(255, 255, 255, 0.37) 75.5%, rgba(255, 255, 255, 0.3852) 82.85%, rgba(255, 255, 255, 0.3924) 88%, rgba(255, 255, 255, 0.4));
+  z-index: 1;
+}
+
+.interview main#main .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.interview main#main .main-title-wrap {
+  width: 720px;
+  margin: 280px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.interview main#main .main-title-wrap h1 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-bottom: 32px;
+  opacity: 0;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.interview main#main .main-title-wrap .interview-main-copy {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.interview main#main .main-title-wrap .name-en {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.interview main#main .main-title-wrap .name-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.interview main#main .main-title-wrap .job-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.interview .sec.interview-profile {
+  color: black;
+  width: 1024px;
+  margin: 0 auto 0;
+  padding-left: 304px;
+}
+
+.interview .sec.interview-profile .sec-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  margin-bottom: 24px;
+}
+
+.interview .sec.interview-profile .sec-container .profile-name {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+}
+
+.interview .sec.interview-profile .sec-container .profile-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0rem;
+}
+
+.interview .sec.interview-sec {
+  color: black;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.interview .sec.interview-sec .section-title h3 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  text-align: left;
+}
+
+.interview .sec.interview-sec .sec-interview-container {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+  width: 720px;
+  margin-left: 304px;
+}
+
+.interview .sec.interview-sec .sec-interview-container .interview-q {
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.interview .sec.interview-sec .sec-interview-container .interview-q:before {
+  content: "";
+  width: 48px;
+  position: absolute;
+  top: 12px;
+  left: -64px;
+  border-top: 2px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.interview .sec.interview-sec .sec-interview-container .interview-a {
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.interview .sec.interview-sec .sec-interview-container h4 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link {
+  margin-bottom: 80px;
+}
+
+.interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li {
+  margin-bottom: 8px;
+}
+
+.interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a:hover {
+  opacity: 0.5;
+}
+
+.interview .interview-session-photo {
+  width: calc(calc(calc(100% - 1024px) / 2) + 1024px);
+  height: 480px;
+  margin: 0;
+}
+
+.interview .interview-session-photo .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-transition: all 0.8s 1s ease;
+  transition: all 0.8s 1s ease;
+}
+
+.interview .interview-session-photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 480px;
+}
+
+.interview .interview-session-photo.show .dot-img {
+  opacity: 0;
+}
+
+.interview.sakamoto main#main .area-img {
+  background: url(../img/sakamoto_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.interview.konita main#main .area-img {
+  background: url(../img/konita_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.interview.yanagihara main#main .area-img {
+  background: url(../img/yanagihara_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.interview.togami main#main .area-img {
+  background: url(../img/togami_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.interview.seki main#main .area-img {
+  background: url(../img/seki_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.interview.miyamura main#main .area-img {
+  background: url(../img/miyamura_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .interview main#main {
+    width: 100%;
+    height: 480px;
+    margin-top: 64px;
+    padding: 32px 16px 0;
+    position: relative;
+  }
+  .interview main#main .area-img {
+    width: 100%;
+    height: 480px;
+  }
+  .interview main#main .main-title-wrap {
+    width: 100%;
+    margin: 220px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  .interview main#main .main-title-wrap h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .interview main#main .main-title-wrap .interview-main-copy {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .interview main#main .main-title-wrap .name-en {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .interview main#main .main-title-wrap .name-jp {
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.3rem;
+  }
+  .interview main#main .main-title-wrap .job-jp {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .interview .sec.interview-profile {
+    color: black;
+    width: 100%;
+    margin: 0 0 64px;
+    padding: 64px 16px 0;
+  }
+  .interview .sec.interview-profile .sec-container h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .interview .sec.interview-profile .sec-container .profile-name {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .interview .sec.interview-profile .sec-container .profile-jp {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .interview .sec.interview-sec {
+    color: black;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 16px;
+  }
+  .interview .sec.interview-sec .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .interview .sec.interview-sec .sec-interview-container {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 0;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-q {
+    margin-bottom: 16px;
+    line-height: 1.8;
+    padding-left: 40px;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-q:before {
+    width: 32px;
+    top: 12px;
+    left: 0px;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-a {
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .interview .sec.interview-sec .sec-interview-container h4 {
+    font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link {
+    margin-bottom: 80px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li {
+    margin-bottom: 8px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a {
+    color: black;
+    text-decoration: underline;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a:hover {
+    opacity: 0.5;
+  }
+  .interview .interview-session-photo {
+    width: 100%;
+    height: 320px;
+    margin: 0 0 40px;
+  }
+  .interview .interview-session-photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 320px;
+  }
+  .interview .interview-session-photo.show .dot-img {
+    opacity: 0;
+  }
+  .interview.konita main#main .area-img {
+    background: url(../img/konita_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.togami main#main .area-img {
+    background: url(../img/togami_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.seki main#main .area-img {
+    background: url(../img/seki_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.miyamura main#main .area-img {
+    background: url(../img/miyamura_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .interview main#main {
+    width: 100%;
+    height: 480px;
+    margin-top: 64px;
+    padding: 32px 16px 0;
+    position: relative;
+  }
+  .interview main#main .area-img {
+    width: 100%;
+    height: 480px;
+  }
+  .interview main#main .main-title-wrap {
+    width: 100%;
+    margin: 220px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  .interview main#main .main-title-wrap h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .interview main#main .main-title-wrap .interview-main-copy {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .interview main#main .main-title-wrap .name-en {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .interview main#main .main-title-wrap .name-jp {
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.3rem;
+  }
+  .interview main#main .main-title-wrap .job-jp {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .interview .sec.interview-profile {
+    color: black;
+    width: 100%;
+    margin: 0 0 64px;
+    padding: 64px 16px 0;
+  }
+  .interview .sec.interview-profile .sec-container h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .interview .sec.interview-profile .sec-container .profile-name {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .interview .sec.interview-profile .sec-container .profile-jp {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .interview .sec.interview-sec {
+    color: black;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 16px;
+  }
+  .interview .sec.interview-sec .section-title {
+    padding: 0;
+  }
+  .interview .sec.interview-sec .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .interview .sec.interview-sec .sec-interview-container {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 0;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-q {
+    margin-bottom: 16px;
+    line-height: 1.8;
+    padding-left: 40px;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-q:before {
+    width: 32px;
+    top: 12px;
+    left: 0px;
+  }
+  .interview .sec.interview-sec .sec-interview-container .interview-a {
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .interview .sec.interview-sec .sec-interview-container h4 {
+    font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0rem;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link {
+    margin-bottom: 80px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li {
+    margin-bottom: 8px;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a {
+    color: black;
+    text-decoration: underline;
+  }
+  .interview .sec.interview-sec .sec-interview-container ul.carrer-entry-link li a:hover {
+    opacity: 0.5;
+  }
+  .interview .interview-session-photo {
+    width: 100%;
+    height: 160px;
+    margin: 0 0 40px;
+  }
+  .interview .interview-session-photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 160px;
+  }
+  .interview .interview-session-photo.show .dot-img {
+    opacity: 0;
+  }
+  .interview.konita main#main .area-img {
+    background: url(../img/konita_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.togami main#main .area-img {
+    background: url(../img/togami_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.seki main#main .area-img {
+    background: url(../img/seki_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .interview.miyamura main#main .area-img {
+    background: url(../img/miyamura_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.bottom-interview-link {
+  width: 100%;
+  height: 320px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: 1;
+      -ms-flex-wrap: 1;
+          flex-wrap: 1;
+  margin-bottom: 160px;
+}
+
+.bottom-interview-link .bottom-interview-container {
+  width: calc(100% / 2);
+  height: 320px;
+  position: relative;
+}
+
+.bottom-interview-link .bottom-interview-container a {
+  width: calc(100% / 2);
+  height: 320px;
+  display: block;
+  color: #fcffff;
+  text-decoration: none;
+}
+
+.bottom-interview-link .bottom-interview-container a .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.bottom-interview-link .bottom-interview-container a .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 0.2;
+  -webkit-transition: all 0.8s 1s ease;
+  transition: all 0.8s 1s ease;
+}
+
+.bottom-interview-link .bottom-interview-container a .bottom-interview-meta {
+  text-align: center;
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  padding: 32px 16px;
+  z-index: 5;
+}
+
+.bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-title {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-name {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-job {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.bottom-interview-link .bottom-interview-container a:hover {
+  text-decoration: none;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container a:hover .overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bottom-interview-link .bottom-interview-container a:hover .dot-img {
+  opacity: 0.1;
+  -webkit-transition: all 0.8s 0.2s ease;
+  transition: all 0.8s 0.2s ease;
+}
+
+.bottom-interview-link .bottom-interview-container.sakamoto {
+  background: url(../img/sakamoto_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container.konita {
+  background: url(../img/konita_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container.yanagihara {
+  background: url(../img/yanagihara_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container.seki {
+  background: url(../img/seki_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container.togami {
+  background: url(../img/togami_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-interview-link .bottom-interview-container.miyamura {
+  background: url(../img/miyamura_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .bottom-interview-link {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 80px;
+  }
+  .bottom-interview-link .bottom-interview-container {
+    width: 100%;
+    height: 240px;
+    position: relative;
+  }
+  .bottom-interview-link .bottom-interview-container a {
+    width: 100%;
+    height: 240px;
+  }
+  .bottom-interview-link .bottom-interview-container a .bottom-interview-meta {
+    width: 100%;
+    height: 130px;
+    padding: 32px 16px 16px;
+  }
+  .bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-title {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  .bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-name {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .bottom-interview-link .bottom-interview-container a .bottom-interview-meta .interview-job {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+/* ------------------------------------------------------ */
+/*
+ * Message
+ */
+.message main#main {
+  width: 100%;
+  height: 640px;
+  margin-top: 64px;
+  padding: 80px 0 0;
+  position: relative;
+}
+
+.message main#main .area-img {
+  width: 100%;
+  height: 640px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.message main#main .main-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.21)), color-stop(65%, rgba(255, 255, 255, 0.255)), color-stop(75.5%, rgba(255, 255, 255, 0.2775)), color-stop(82.85%, rgba(255, 255, 255, 0.2889)), color-stop(88%, rgba(255, 255, 255, 0.2943)), to(rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.21) 50%, rgba(255, 255, 255, 0.255) 65%, rgba(255, 255, 255, 0.2775) 75.5%, rgba(255, 255, 255, 0.2889) 82.85%, rgba(255, 255, 255, 0.2943) 88%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0 0%, rgba(255, 255, 255, 0.21) 50%, rgba(255, 255, 255, 0.255) 65%, rgba(255, 255, 255, 0.2775) 75.5%, rgba(255, 255, 255, 0.2889) 82.85%, rgba(255, 255, 255, 0.2943) 88%, rgba(255, 255, 255, 0.3));
+  z-index: 1;
+}
+
+.message main#main .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.message main#main .main-title-wrap {
+  width: 720px;
+  margin: 360px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.message main#main .main-title-wrap h1 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  opacity: 0;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.message main#main .main-title-wrap .message-main-copy {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.message main#main .main-title-wrap .name-en {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.message main#main .main-title-wrap .name-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.message main#main .main-title-wrap .job-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.message .sec.message-profile {
+  color: black;
+  width: 720px;
+  margin: 0 auto 0;
+}
+
+.message .sec.message-profile .sec-container h2 {
+  font-family: "Akkurat-Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-bottom: 24px;
+}
+
+.message .sec.message-profile .sec-container .profile-name {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0rem;
+}
+
+.message .sec.message-profile .sec-container .profile-jp {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0rem;
+}
+
+.message .sec.message-sec {
+  color: black;
+  width: 720px;
+  margin: 0 auto 80px;
+}
+
+.message .sec.message-sec .section-title h3 {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  text-align: left;
+}
+
+.message .sec.message-sec .sec-message-container {
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W1", "Hiragino Kaku Gothic ProN W1", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+.message .sec.message-sec .sec-message-container .message-a {
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.message .message-session-photo {
+  width: calc(calc(calc(100% - 1024px) / 2) + 1024px);
+  height: 480px;
+  margin: 0;
+}
+
+.message .message-session-photo .dot-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../img/dot.png) 0 0 repeat;
+  background-size: 2px;
+  opacity: 1;
+  -webkit-transition: all 0.8s 1s ease;
+  transition: all 0.8s 1s ease;
+}
+
+.message .message-session-photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 480px;
+}
+
+.message .message-session-photo.show .dot-img {
+  opacity: 0;
+}
+
+.message .area-message {
+  margin-bottom: 160px;
+}
+
+.message.nozawa main#main .area-img {
+  background: url(../img/nozawa_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.message.nozawa main#main .main-title-wrap h1 {
+  text-align: right;
+}
+
+.message.nozawa main#main .main-title-wrap .message-main-copy {
+  text-align: right;
+}
+
+.message.nozawa main#main .main-title-wrap .name-en {
+  text-align: right;
+}
+
+.message.nozawa main#main .main-title-wrap .name-jp {
+  text-align: right;
+}
+
+.message.nozawa main#main .main-title-wrap .job-jp {
+  text-align: right;
+}
+
+.message.mizuno main#main .area-img {
+  background: url(../img/mizuno_main.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .message main#main {
+    width: 100%;
+    height: 480px;
+    margin-top: 64px;
+    padding: 32px 16px 0;
+    position: relative;
+  }
+  .message main#main .area-img {
+    width: 100%;
+    height: 480px;
+  }
+  .message main#main .main-title-wrap {
+    width: 100%;
+    margin: 240px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  .message main#main .main-title-wrap h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .message main#main .main-title-wrap .message-main-copy {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .message main#main .main-title-wrap .name-en {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .message main#main .main-title-wrap .name-jp {
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.3rem;
+  }
+  .message main#main .main-title-wrap .job-jp {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .message .sec.message-profile {
+    color: black;
+    width: 100%;
+    margin: 0 0 64px;
+    padding: 64px 16px 0;
+  }
+  .message .sec.message-profile .sec-container h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .message .sec.message-profile .sec-container .profile-name {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .message .sec.message-profile .sec-container .profile-jp {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .message .sec.message-sec {
+    color: black;
+    width: 100%;
+    margin: 0 0 96px;
+    padding: 0 16px;
+  }
+  .message .sec.message-sec .section-title {
+    padding: 0;
+  }
+  .message .sec.message-sec .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .message .sec.message-sec .sec-message-container {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 0;
+  }
+  .message .sec.message-sec .sec-message-container .message-a {
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .message .message-session-photo {
+    width: 100%;
+    height: 320px;
+    margin: 0 0 40px;
+  }
+  .message .message-session-photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 320px;
+  }
+  .message .message-session-photo.show .dot-img {
+    opacity: 0;
+  }
+  .message.nozawa main#main .area-img {
+    background: url(../img/nozawa_main.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .message.mizuno main#main .area-img {
+    background: url(../img/mizuno_main.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .message main#main {
+    width: 100%;
+    height: 480px;
+    margin-top: 64px;
+    padding: 32px 16px 0;
+    position: relative;
+  }
+  .message main#main .area-img {
+    width: 100%;
+    height: 480px;
+  }
+  .message main#main .main-title-wrap {
+    width: 100%;
+    margin: 240px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  .message main#main .main-title-wrap h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .message main#main .main-title-wrap .message-main-copy {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .message main#main .main-title-wrap .name-en {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .message main#main .main-title-wrap .name-jp {
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.3rem;
+  }
+  .message main#main .main-title-wrap .job-jp {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .message .sec.message-profile {
+    color: black;
+    width: 100%;
+    margin: 0 0 64px;
+    padding: 64px 16px 0;
+  }
+  .message .sec.message-profile .sec-container h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .message .sec.message-profile .sec-container .profile-name {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .message .sec.message-profile .sec-container .profile-jp {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .message .sec.message-sec {
+    color: black;
+    width: 100%;
+    margin: 0 0 96px;
+    padding: 0 16px;
+  }
+  .message .sec.message-sec .section-title {
+    padding: 0;
+  }
+  .message .sec.message-sec .section-title h3 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .message .sec.message-sec .sec-message-container {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 0;
+  }
+  .message .sec.message-sec .sec-message-container .message-a {
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .message .message-session-photo {
+    width: 100%;
+    height: 160px;
+    margin: 0 0 40px;
+  }
+  .message .message-session-photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 160px;
+  }
+  .message .message-session-photo.show .dot-img {
+    opacity: 0;
+  }
+  .message.nozawa main#main .area-img {
+    background: url(../img/nozawa_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .message.nozawa main#main .main-title-wrap h1 {
+    text-align: left;
+  }
+  .message.nozawa main#main .main-title-wrap .message-main-copy {
+    text-align: left;
+  }
+  .message.nozawa main#main .main-title-wrap .name-en {
+    text-align: left;
+  }
+  .message.nozawa main#main .main-title-wrap .name-jp {
+    text-align: left;
+  }
+  .message.nozawa main#main .main-title-wrap .job-jp {
+    text-align: left;
+  }
+  .message.mizuno main#main .area-img {
+    background: url(../img/mizuno_main_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* add */
+.area-news .area-container dl {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    font-size: 1.4rem;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+.area-news .area-container dl dt {
+    width: 30%;
+    margin-bottom: 8px;
+}
+.area-news .area-container dl dd {
+    width: 70%;
+}
+
+
+
+
+/* top interview-*/
+.interview-container ul li{
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+@media (max-width: 767px){
+	.interview-container ul li.empty{
+		display:none;
+	}
+}
+/* interview */
+.interview .area-img{
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* message */
+.message .area-message{
+  margin-bottom: 0;
+}
+.message footer{
+  margin-top: 160px;
+}
+.bottom-interview-container {
+  background-size: cover;
+    background-position: center center;
+}
+
+.top-message-thumbnail{
+  width: 100%;
+  height: 480px;
+  background: #fcffff url(../img/area_message_nozawa.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container-left .area-container{
+  width: 480px;
+    left: 160px;
+    top: 100px;
+}
+
+.container-right .area-container{
+  width: 480px;
+    right: 200px;
+    top: 100px;
+}
+
+@media (min-width: 767px){
+	.area-message{
+	background-position:center center;
+	}
+}
+@media (max-width: 767px){
+.area-message a .area-container {
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    top: 260px;
+}
+}
+@media (max-width: 1024px){
+.area-message {
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+}
+}
+/*
+.area-message{
+  background-size:cover;
+}
+*/
+
+.page404 .sec.message {
+    color: black;
+    width: 100%;
+    margin: 50px 100px auto auto;
+}
+
+.page404 .sec.message .sec-container h2 {
+    font-family: "Akkurat-Bold", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.page404  .copy-jp{
+  text-align:center;
+}
+.page404 .to-top-link{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* singleページ */
+/* categoryページ */
+.wp-block-image img{
+  height:auto;
+}
+.category main,
+.single main{
+  padding-top:100px;
+  padding: 100px;
+  width:100%;
+    margin: 0 auto;
+  max-width:680px;
+}
+.category main h2,
+.single main h2{
+  font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.category main h2{
+  text-align: left;
+}
+.category main a,
+.category maintime,
+.single main a,
+.single main time{
+   color: #333;
+    font-size: 1.5rem;
+    list-style: none;
+    display: block;
+  text-decoration:none;
+}
+.single .post-categories{
+  text-decoration:none;
+}
+.single .post-categories {
+    list-style: none;
+  margin-bottom:30px;
+}
+
+.category p,
+.single p{
+  margin-bottom:10px;
+  font-size:1.4rem;
+}
+.single .content,
+.category .content
+{
+margin-bottom:100px;
+}
+.category .contents{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+.category .title{
+  font-size: 16px;
+  padding: 20px 0px;
+}
+.category h2{
+  padding: 0;
+  text-align: left;
+}
+.category h2 a{
+  margin-top: 10px;
+}
+.category time{
+  font-size:1.4rem;
+}
+.category .cat-name{
+  margin-bottom: 50px;
+}
+
+.category .content{
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .category main, .single main{
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+/* pager */
+.pager{
+    display: flex;
+    justify-content: space-between;
+}
