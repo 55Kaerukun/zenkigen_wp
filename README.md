@@ -1,4 +1,4 @@
-# zenkigen_wp
+# wp設定方法
 1、これらのファイルを「zenkigen_recruit」という 
 フォルダを作って格納し、WordPressのテーマとして 
 認識させてください 
