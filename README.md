@@ -11,7 +11,8 @@
 
 Advanced Custom Fields <br>
 Advanced Custom Fields pro <br>
-All-in-One WP Migration （大きい容量を引っ越しできるタイプの方）<br>
+All-in-One WP Migration
+All-in-One WP Migration extension（大きい容量を引っ越しできるように拡張）<br>
 https://import.wp-migration.com/ 
 
 
@@ -27,7 +28,8 @@ https://drive.google.com/file/d/1KdU-Aisb3gxyJWFK7rqQsLhg0_siW7x8/view?usp=shari
 
 <br>
 
-これで「workstyle」以外は表示されるはずです。 
+これで「workstyle」以外は表示されるはずです。 <br>
+何かありましたらご連絡ください
 
 <br>
 
